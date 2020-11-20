@@ -1,0 +1,35 @@
+//* sizes
+$desktop: '(min-width: 1244px)'
+$adaptive: '(max-width: 1243px)'
+
+$maxWidth : 1180px
+
+//* fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+$fontSizeS: 14px
+$fontSizeM: 16px
+$fontSizeL: 18px
+$fontWeightM: 400
+$fontWeightL: 700
+
+//* paths
+$img: '../images' 
+
+//* mixins 
+@mixin position
+  max-width: $maxWidth
+  margin-right: auto
+  margin-left: auto
+  @media #{$adaptive}
+    padding-right: 32px
+    padding-left: 32px
+
+@mixin regFont
+  font-family: 'Ubuntu Mono', monospace, sans-serif
+  font-size: $fontSizeM
+  font-weight: $fontWeightM
+
+@mixin subtitleFont
+  font-family: 'Ubuntu Mono', monospace, sans-serif
+  font-size: $fontSizeL
+  font-weight: $fontWeightL

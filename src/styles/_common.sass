@@ -1,0 +1,64 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body, html, #app
+  height: 100%
+
+a
+  text-decoration: none
+  color: #000
+  cursor: pointer
+
+ul li
+  list-style: none
+
+input[type='checkbox'],
+input[type='radio'],
+input[type='file']
+  display: none
+
+input[type='number'],
+input[type='date']
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    -moz-appearance: textfield
+    margin: 0
+
+input[type='number'],
+input[type='date']
+  -moz-appearance: textfield
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="date"],
+  -webkit-appearance: none
+  &:focus
+    outline: none
+
+label
+  cursor: pointer
+
+summary
+  &::-webkit-details-marker
+    display: none
+  &::-moz-list-bullet
+    list-style-type: none
+
+// выключи это потом
+body
+  background: lightgray
