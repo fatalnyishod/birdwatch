@@ -17,19 +17,25 @@ $img: '../images'
 
 //* mixins 
 @mixin position
-  max-width: $maxWidth
-  margin-right: auto
-  margin-left: auto
-  @media #{$adaptive}
-    padding-right: 32px
-    padding-left: 32px
+	max-width: $maxWidth
+	margin-right: auto
+	margin-left: auto
+	@media #{$adaptive}
+		padding-right: 32px
+		padding-left: 32px
 
 @mixin regFont
-  font-family: 'Ubuntu Mono', monospace, sans-serif
-  font-size: $fontSizeM
-  font-weight: $fontWeightM
+	font-family: 'Ubuntu Mono', monospace, sans-serif
+	font-size: $fontSizeM
+	font-weight: $fontWeightM
 
 @mixin subtitleFont
-  font-family: 'Ubuntu Mono', monospace, sans-serif
-  font-size: $fontSizeL
-  font-weight: $fontWeightL
+	font-family: 'Ubuntu Mono', monospace, sans-serif
+	font-size: $fontSizeL
+	font-weight: $fontWeightL
+
+// colors
+$main: #285b6c
+$primary: #10181f
+$secondary: #b0b0b0
+$light: #f6faf9
