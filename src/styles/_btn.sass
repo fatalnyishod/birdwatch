@@ -1,0 +1,15 @@
+.btn
+	display: inline-block
+	height: 56px
+	padding: 18px 56px 0 24px
+	background: url('#{$images}/icons/small-arrow.svg') no-repeat calc(100% - 34px) calc(0% + 24px), #fff
+	border-radius: 12px
+	color: $main
+	font-weight: 500
+	line-height: 24px
+	transition: background-position-x .2s ease-in-out
+	cursor: pointer
+
+	@media (hover)
+		&:hover
+			background-position-x: calc(100% - 24px)
