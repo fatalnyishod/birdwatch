@@ -1,0 +1,59 @@
+.subscription
+	background: $light
+
+	&__grid
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 730px
+		padding-top: 84px
+
+	&__form
+		display: flex
+		justify-content: space-between
+		width: 100%
+		margin-bottom: 64px
+		padding: 16px 16px 16px 24px
+		background: #fff
+		box-shadow: 0 14px 28px rgba(40, 91, 108, .08)
+		border-radius: 12px
+	
+	&__input
+		width: 100%
+		height: 56px
+		margin-right: 24px
+		border: none
+		font-size: 1rem
+		font-weight: 600
+
+		&::-webkit-input-placeholder
+			color: $primary
+
+		&::-moz-placeholder
+			color: $primary
+
+	&__socials
+		display: flex
+		align-items: center
+		margin-bottom: 84px
+
+		&-item
+			width: 32px
+			height: 32px
+			transition: transform .2s ease-in-out
+
+			&:not(:last-of-type)
+				margin-right: 12px
+
+			@media (hover)
+				&:hover
+					transform: scale(1.1)
+
+	.title_h2
+		margin-bottom: 32px
+		text-align: center
+		font-size: 32px
+
+	.title_h3
+		margin-bottom: 32px
+		font-size: 18px
