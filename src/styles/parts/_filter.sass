@@ -18,7 +18,7 @@
 	&__item
 		display: flex
 		align-items: center
-		padding: 8px 40px 8px 16px
+		padding: 8px 68px 8px 16px
 		background: url('#{$images}/icons/main/small-arrow.svg') no-repeat calc(100% - 26px) calc(50% - 2px)
 		border-radius: 12px
 		box-shadow: 0px 14px 28px rgba(40, 91, 108, 0.08)
@@ -27,6 +27,9 @@
 		@media (hover)
 			&:hover
 				background-position-x: calc(100% - 16px)
+
+		@media #{$phone}
+			justify-self: start
 
 	&__img
 		width: 56px

@@ -17,6 +17,11 @@
 		background: #fff
 		box-shadow: 0 14px 28px rgba(40, 91, 108, .08)
 		border-radius: 12px
+
+		@media #{$phone}
+			flex-direction: column
+			align-items: flex-start
+			padding: 16px
 	
 	&__input
 		width: 100%
@@ -25,6 +30,10 @@
 		border: none
 		font-size: 1rem
 		font-weight: 600
+
+		@media #{$phone}
+			margin: 0
+			margin-bottom: 16px
 
 		&::-webkit-input-placeholder
 			color: $primary

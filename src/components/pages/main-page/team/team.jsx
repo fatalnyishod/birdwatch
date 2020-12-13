@@ -11,6 +11,21 @@ const Team = () => {
 					И с каждым днем наше сообщество растет
 				</h2>
 
+				<div className="team__wrap">
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+					<img src="https://i.pinimg.com/originals/09/98/16/0998160a0aab2c5896f5eeb712effe51.jpg" className="team__member"/>
+				</div>
+
 				<Route>
 					<Link to="" className="btn">Присоединиться к нам</Link>
 				</Route>

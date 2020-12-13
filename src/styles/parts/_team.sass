@@ -7,6 +7,28 @@
 		align-items: center
 		max-width: 730px
 
+	&__wrap
+		display: grid
+		grid-template-columns: repeat(6, 1fr)
+		grid-row-gap: 45px
+		width: 100%
+		margin-bottom: 42px
+
+		@media #{$tablet}
+			grid-template-columns: repeat(4, 1fr)
+			grid-row-gap: 32px
+
+		@media #{$phone}
+			grid-template-columns: repeat(3, 1fr)
+			grid-row-gap: 16px
+
+	&__member
+		justify-self: center
+		width: 84px
+		height: 84px
+		border-radius: 50%
+		object-fit: cover
+
 	.title_h2
 		max-width: 540px
 		margin-bottom: 32px
