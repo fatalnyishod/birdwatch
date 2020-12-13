@@ -3,7 +3,7 @@
 
 	&__grid
 		display: grid
-		grid-template-columns: 4fr 3fr 5fr
+		grid-template-columns: 1fr 11fr
 		grid-column-gap: 30px
 		padding-top: 32px
 
@@ -26,27 +26,32 @@
 		font-weight: 600
 		font-size: .875rem
 
+		@media #{$tablet}
+			display: none
+
 		&::-webkit-input-placeholder
 			color: #fff
 
 		&::-moz-placeholder
 			color: #fff
 
-	&__nav
+	&__wrap
 		display: flex
 		justify-content: flex-end
 		align-items: center
 		justify-self: end
+		
+		@media #{$phone}
+			display: none
 
+	&__nav
 		&-item
+			margin-left: 32px
 			color: #fff
 			font-weight: 600
 			line-height: 1.4
 			text-align: center
 			transition: color .2s ease-in-out
-
-			&:not(:first-of-type)
-				margin-left: 32px
 
 			@media (hover)
 				&:hover

@@ -47,7 +47,7 @@ const RoundUp = () => {
 
 					<Link to="#" className="round-up__item">
 						<img src="https://img6.eadaily.com/c650x400/o/541/9882205265e7a8f54b48339a0bf88.jpeg" className="round-up__img"/>
-						<h3 className="title title_h3">Михаил Данилов | 8 декабря 2020</h3>
+						<h3 className="title title_h3">Вадим Злыгастев | 8 декабря 2020</h3>
 						<p className="text text_light">Langtang National Park — Langtang Village to Kyanjin Gumba, Rasuwa, Madhyamanchal, Nepal</p>
 					</Link>
 

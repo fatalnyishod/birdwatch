@@ -17,7 +17,7 @@ const Filter = () => {
 					</Link>
 
 					<Link to="#" className="filter__item">
-						<img src="https://fs01.cap.ru/www20/minpriroda/news/2020/04/15/4a1c72c5-8c41-4b4f-88b5-3dc8a7fdbd97/dscn1376.jpg" className="filter__img"/>
+						<img src="https://www.mordovmedia.ru/media/news/90164/1509f6be25c98dbb38bcbe9663ce4606.jpg" className="filter__img"/>
 						<span className="link">Вид птицы</span>
 					</Link>
 

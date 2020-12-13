@@ -11,6 +11,8 @@ const MainPage = () => {
 			<Filter/>
 
 			<RoundUp/>
+
+			<span>&nbsp;</span>
 		</>
 	);
 };

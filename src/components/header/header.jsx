@@ -12,9 +12,9 @@ const Header = () => {
 					</Route>
 				</div>
 
-				<input type="text" className="header__search" placeholder="Найти вид"/>
+				<div className="header__wrap">
+					<input type="text" className="header__search" placeholder="Найти вид"/>
 
-				<div className="header__nav">
 					<Route>
 						<Link to="#" className="header__nav-item">Журнал</Link>
 						<Link to="#" className="header__nav-item">О нас</Link>
