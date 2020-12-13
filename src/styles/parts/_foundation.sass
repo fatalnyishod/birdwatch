@@ -1,0 +1,38 @@
+.foundation
+	margin-bottom: 64px
+
+	&__wrap
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-column-gap: 30px
+
+		&:first-of-type
+			margin-bottom: 56px
+
+		@media (max-width: 929px)
+			grid-template-columns: 1fr
+			grid-row-gap: 24px
+
+		.title_h4
+			margin-bottom: 16px
+
+		.title_h2
+			font-size: 2rem
+			margin-bottom: 24px
+
+		.text
+			margin-bottom: 24px
+
+	&__img
+		width: 100%
+		height: 100%
+		object-fit: contain
+
+		@media (max-width: 929px)
+			grid-row-start: 2
+
+		@media #{$tablet}
+			height: calc(100vw - 48px)
+
+		@media #{$phone}
+			height: calc(100vw - 32px)

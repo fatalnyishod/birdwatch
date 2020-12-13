@@ -2,9 +2,12 @@
 	display: inline-block
 	height: 56px
 	padding: 18px 56px 0 24px
-	background: url('#{$images}/icons/small-arrow.svg') no-repeat calc(100% - 34px) calc(0% + 24px), #fff
+	background: url('#{$images}/icons/white/small-arrow.svg')
+	background-repeat: no-repeat !important
+	background-position: calc(100% - 34px) calc(0% + 24px) !important
+	background-color: $main
 	border-radius: 12px
-	color: $main
+	color: #fff
 	font-weight: 500
 	line-height: 24px
 	transition: background-position-x .2s ease-in-out
@@ -12,4 +15,9 @@
 
 	@media (hover)
 		&:hover
-			background-position-x: calc(100% - 24px)
+			background-position-x: calc(100% - 24px) !important
+
+	&_white
+		background: url('#{$images}/icons/main/small-arrow.svg')
+		background-color: #fff
+		color: $main
