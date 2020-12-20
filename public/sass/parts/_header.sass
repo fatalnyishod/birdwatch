@@ -7,11 +7,13 @@
 		padding-top: 32px
 
 	&__logo
+		position: relative
 		display: block
 		width: 46px
 		height: 46px
 		margin: 0
 		background: url('#{$images}/icons/birdwatch.svg') no-repeat center
+		z-index: 2
 
 	&__search
 		align-self: center
@@ -34,16 +36,32 @@
 		&::-moz-placeholder
 			color: #fff
 
-	&__wrap
+	&__nav
 		display: flex
 		justify-content: flex-end
 		align-items: center
 		justify-self: end
-		
+
 		@media #{$phone}
 			display: none
+			position: fixed
+			top: 0
+			left: 0
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			width: 100%
+			height: 100vh
+			padding-top: 112px
+			background: $main
+			z-index: 1
 
-	&__nav
+			.header__nav-item
+				margin: 0 0 8px 16px
+
+		&_shown
+			display: flex
+
 		&-item
 			margin-left: 32px
 			color: #fff
@@ -55,3 +73,13 @@
 			@media (hover)
 				&:hover
 					color: $secondary
+
+	&__trigger
+		position: relative
+		display: none
+		align-items: center
+		color: #fff
+		z-index: 2
+
+		@media #{$phone}
+			display: flex

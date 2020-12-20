@@ -1,5 +1,6 @@
 .btn
 	display: inline-block
+	max-width: 100%
 	height: 56px
 	padding: 18px 56px 0 24px
 	background: url('#{$images}/icons/white/small-arrow.svg')
@@ -11,6 +12,9 @@
 	font-weight: 500
 	line-height: 24px
 	transition: background-position-x .2s ease-in-out
+	overflow: hidden
+	white-space: nowrap
+	text-overflow: ellipsis
 	cursor: pointer
 
 	@media (hover)
