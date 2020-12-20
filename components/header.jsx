@@ -11,7 +11,7 @@ const Header = () => {
 				</div>
 
 				<div className="header__wrap">
-					<input type="text" className="header__search" placeholder="Найти вид"/>
+					{/* <input type="text" className="header__search" placeholder="Найти вид"/> */}
 
 					<Link href="/">
 						<a className="header__nav-item">Журнал</a>

@@ -9,17 +9,17 @@ import Subscription from "../components/subscription";
 export default function Home() {
 	return (
 		<Layout>
-			<Banner/>
+			<Banner />
 
-			<Filter/>
+			<Filter />
 
-			<RoundUp/>
+			<RoundUp />
 
-			<Foundation/>
+			<Foundation />
 
-			<Team/>
+			<Team />
 
-			<Subscription/>
+			<Subscription />
 		</Layout>
 	);
 }
