@@ -1,0 +1,57 @@
+.header
+	position: relative
+
+	&__grid
+		display: flex
+		justify-content: space-between
+		padding-top: 32px
+
+	&__logo
+		display: block
+		width: 46px
+		height: 46px
+		margin: 0
+		background: url('#{$images}/icons/birdwatch.svg') no-repeat center
+
+	&__search
+		align-self: center
+		height: 30px
+		padding-right: 24px
+		background: url('#{$images}/icons/loupe.svg') no-repeat calc(100% - 4px) calc(0% + 4px), transparent
+		background-size: 16px
+		border: none
+		border-bottom: 2px solid rgba(100%, 100%, 100%, .2)
+		color: #fff
+		font-weight: 600
+		font-size: .875rem
+
+		@media #{$tablet}
+			display: none
+
+		&::-webkit-input-placeholder
+			color: #fff
+
+		&::-moz-placeholder
+			color: #fff
+
+	&__wrap
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		justify-self: end
+		
+		@media #{$phone}
+			display: none
+
+	&__nav
+		&-item
+			margin-left: 32px
+			color: #fff
+			font-weight: 600
+			line-height: 1.4
+			text-align: center
+			transition: color .2s ease-in-out
+
+			@media (hover)
+				&:hover
+					color: $secondary

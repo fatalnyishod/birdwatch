@@ -1,0 +1,30 @@
+.banner
+	position: relative
+	margin-bottom: 72px
+	background: url('#{$images}/backgrounds/green-bird.png') no-repeat top
+	background-size: cover
+
+	&__grid
+		position: relative
+		padding-top: 100px
+		padding-bottom: 182px
+
+		@media #{$phone}
+			padding-top: 48px
+			padding-bottom: 100px
+
+	&__wrap
+		max-width: 445px
+	
+	&__title
+		line-height: 1.35
+		color: #fff
+
+	&__overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main
+		opacity: .8

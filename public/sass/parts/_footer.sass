@@ -1,0 +1,26 @@
+.footer
+
+	&__grid
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 42px
+		padding-bottom: 42px
+		border-top: 1px solid rgba(40, 91, 108, .2)
+
+	&__nav
+		display: flex
+		justify-content: flex-end
+		align-items: center
+
+		@media #{$phone}
+			display: none
+
+		&-item
+			margin-left: 32px
+			text-align: center
+			transition: color .2s ease-in-out
+
+			@media (hover)
+				&:hover
+					color: $main

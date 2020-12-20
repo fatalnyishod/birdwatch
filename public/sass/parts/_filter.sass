@@ -1,0 +1,39 @@
+.filter
+	margin-bottom: 82px
+
+	&__grid
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-gap: 32px 30px
+
+		@media #{$desktop}
+			grid-template-columns: repeat(3, 1fr)
+
+		@media #{$tablet}
+			grid-template-columns: repeat(2, 1fr)
+
+		@media #{$phone}
+			grid-template-columns: 1fr
+
+	&__item
+		display: flex
+		align-items: center
+		padding: 8px 68px 8px 16px
+		background: url('#{$images}/icons/main/small-arrow.svg') no-repeat calc(100% - 26px) calc(50% - 2px)
+		border-radius: 12px
+		box-shadow: 0px 14px 28px rgba(40, 91, 108, 0.08)
+		transition: background-position-x .2s ease-in-out
+
+		@media (hover)
+			&:hover
+				background-position-x: calc(100% - 16px)
+
+		@media #{$phone}
+			justify-self: start
+
+	&__img
+		width: 56px
+		height: 56px
+		border-radius: 12px
+		object-fit: cover
+		margin-right: 16px
