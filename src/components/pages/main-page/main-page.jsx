@@ -7,21 +7,21 @@ import Team from './team/team.jsx';
 import Subscription from './subscription/subscription.jsx';
 
 const MainPage = () => {
-	return (
-		<>
-			<Banner/>
+  return (
+    <>
+      <Banner />
 
-			<Filter/>
+      {/* <Filter/> */}
 
-			<RoundUp/>
+      <RoundUp />
 
-			<Foundation/>
+      {/* <Foundation/> */}
 
-			<Team/>
+      {/* <Team/> */}
 
-			<Subscription/>
-		</>
-	);
+      <Subscription />
+    </>
+  );
 };
 
 export default MainPage;
