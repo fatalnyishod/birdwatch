@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Banner from "../components/banner";
 import Filter from "../components/filter";
 import RoundUp from "../components/round-up";
@@ -8,6 +9,15 @@ import Subscription from "../components/subscription";
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>Бёрдвотчинг — что это и как начать?</title>
+				<meta name="description" content="Видели людей, которые бегают по парку с биноклями и фотоаппаратами и что-то высматривают в кроне деревьев? Это бёрдвотчеры — любители птиц. Они коллекционируют встреченные виды и помогают развивать науку."/>
+				<meta property="og:title" content="Бёрдвотчинг — что это и как начать?"/>
+				<meta property="og:description" content="Видели людей, которые бегают по парку с биноклями и фотоаппаратами и что-то высматривают в кроне деревьев? Это бёрдвотчеры — любители птиц. Они коллекционируют встреченные виды и помогают развивать науку."/>
+				<meta property="og:image" content="http://birdwatch.ru/images/"/>
+				<meta property="og:url" content="http://birdwatch.ru"/>
+			</Head>
+
 			<Banner />
 
 			<Filter />
