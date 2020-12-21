@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import Link from "next/link";
 
-const Header = () => {
+const Header = ({isBanner = false}) => {
 	const [navState, setState] = useState(true);
 
 	useEffect(() => {
@@ -9,7 +9,7 @@ const Header = () => {
 	});
 
 	return (
-		<div className="header">
+		<div className={!isBanner ? "header" : "header header_transparent"}>
 			<div className="grid header__grid">
 				<Link href="/">
 					<a className="header__logo"></a>

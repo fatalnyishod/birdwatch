@@ -1,10 +1,16 @@
 .header
 	position: relative
+	margin-bottom: 70px
+	background: $main
+
+	&_transparent
+		background: transparent
 
 	&__grid
 		display: flex
 		justify-content: space-between
 		padding-top: 32px
+		padding-bottom: 30px
 
 	&__logo
 		position: relative
@@ -13,7 +19,7 @@
 		height: 46px
 		margin: 0
 		background: url('#{$images}/icons/birdwatch.svg') no-repeat center
-		z-index: 2
+		z-index: 3
 
 	&__search
 		align-self: center
@@ -54,7 +60,7 @@
 			height: 100vh
 			padding-top: 112px
 			background: $main
-			z-index: 1
+			z-index: 2
 
 			.header__nav-item
 				margin: 0 0 8px 16px

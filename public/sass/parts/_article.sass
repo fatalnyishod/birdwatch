@@ -1,0 +1,149 @@
+.article
+
+	&__header
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 40px
+		padding: 144px 64px
+		background: url('#{$images}/backgrounds/green-bird.png') no-repeat center / cover
+		border-radius: 20px
+		text-align: center
+
+		@media #{$phone}
+			padding: 56px 8px
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(40, 91, 108, .8)
+			border-radius: 20px
+
+		.title
+			z-index: 1
+
+	&__grid
+		display: grid
+		grid-template-columns: 2fr 1fr
+		grid-column-gap: 30px
+		padding-bottom: 76px
+
+		@media (max-width: 929px)
+			grid-template-columns: 1fr
+			grid-row-gap: 8px
+
+	&__wrap
+
+		&_main
+			position: relative
+			overflow: hidden
+
+			> .title, > .text, > .article__img, .article__swiper, .article__quote
+				margin-bottom: 32px
+
+		&_side
+
+	&__author
+		padding: 24px 16px
+		background: $light
+		border-radius: 10px
+		text-align: center
+
+		&-img
+			width: 88px
+			height: 88px
+			margin-bottom: 16px
+			border-radius: 50%
+
+		.title_h3
+			margin-bottom: 12px
+
+	&__swiper
+		position: relative
+
+		&-img
+			width: 100%
+			border-radius: 12px
+
+		&-nav
+			position: absolute
+			top: 50%
+			width: 42px
+			height: 42px
+			margin-top: -21px
+			background: url('#{$images}/icons/main/small-arrow.svg') no-repeat center / 6px 12px, #fff
+			border-radius: 50%
+			z-index: 2
+			cursor: pointer
+
+			@media #{$phone}
+				width: 32px
+				height: 32px
+
+			&_prev
+				left: 40px
+				transform: rotate(180deg)
+
+				@media #{$phone}
+					left: 16px
+
+			&_next
+				right: 40px
+
+				@media #{$phone}
+					right: 16px
+
+		&-pagination
+			position: absolute
+			bottom: 28px
+			display: flex
+			justify-content: center
+			width: 100%
+			z-index: 1
+		
+		&-bullet
+			width: 30px
+			height: 4px
+			margin: 0 4px
+			background: #fff
+			border-radius: 10px
+			opacity: .2
+			cursor: pointer
+
+			&_active
+				opacity: 1
+
+	&__quote
+		position: relative
+		max-width: 540px
+		margin: 47px auto 0
+		padding: 82px 60px 60px
+		background: $light
+		border-radius: 12px
+
+		@media #{$phone}
+			padding: 82px 12px 60px
+
+		&::before
+			content: ''
+			position: absolute
+			top: -15px
+			left: 50%
+			width: 46px
+			height: 34px
+			margin-left: -23px
+			background: url('#{$images}/icons/main/quotes.svg') no-repeat center / contain
+
+		.text_quote
+			font-size: 1.375rem
+			color: $main
+			text-align: center
+
+	&__img
+		width: 100%
+		border-radius: 12px

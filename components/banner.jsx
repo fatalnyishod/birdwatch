@@ -1,11 +1,12 @@
 import Header from "./header";
+import Link from "next/link";
 
 const Banner = () => {
 	return (
 		<div className="banner">
 			<div className="banner__overlay"></div>
 
-			<Header />
+			<Header isBanner={true} />
 
 			<div className="grid banner__grid">
 				<div className="banner__wrap">
@@ -24,7 +25,9 @@ const Banner = () => {
 					<p className="text text_b text_white">Вы тоже можете попробовать, это затягивает.</p>
 					<margin-24/>
 
-					<span className="btn btn_white">Подробнее о бёрдвотчинге</span>
+					<Link href="/blog/how-to-start">
+						<a className="btn btn_white">Подробнее о бёрдвотчинге</a>
+					</Link>
 				</div>
 			</div>
 		</div>
