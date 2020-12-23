@@ -101,10 +101,12 @@ const Article = (props) => {
 	);
 };
 
-Article.getInitialProps = ({query}) => {
+export async function getServerSideProps ({query}) {
 	return {
-		articleId: query.article
-	};
-};
+		props: {
+			"articleId": query.article
+		}
+	}	
+}
 
 export default Article;
