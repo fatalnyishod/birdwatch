@@ -1,8 +1,10 @@
 import ArticleHeader from "./article-header";
 
-const ArticleParagraph = ({text}) => {
+const ArticleParagraph = ({children}) => {
 	return (
-		<p className="text text_light">{text}</p>
+		<p className="text text_light">
+			{children}
+		</p>
 	);
 };
 

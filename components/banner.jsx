@@ -25,7 +25,7 @@ const Banner = () => {
 					<p className="text text_b text_white">Вы тоже можете попробовать, это затягивает.</p>
 					<margin-24/>
 
-					<Link href="/blog/how-to-start">
+					<Link href="/blog/birdwatching-what-it-is-and-how-to-start">
 						<a className="btn btn_white">Подробнее о бёрдвотчинге</a>
 					</Link>
 				</div>
