@@ -1,6 +1,6 @@
-const ArticleTitle = ({text}) => {
+const ArticleTitle = ({children}) => {
 	return (
-		<h2 className="title title_h2">{text}</h2>
+		<h2 className="title title_h2">{children}</h2>
 	);
 };
 
