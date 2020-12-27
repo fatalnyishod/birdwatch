@@ -1,4 +1,4 @@
-import "../public/sass/main.sass";
+import "../static/sass/main.sass";
 import "swiper/swiper-bundle.min.css";
 
 function MyApp ({Component, pageProps}) {
