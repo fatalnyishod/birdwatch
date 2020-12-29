@@ -1,8 +1,8 @@
 const ArticleList = ({list}) => {
 	const items = [];
 
-	list.forEach((item) => {
-		items.push(<li className="ul__li ul__li_light" dangerouslySetInnerHTML={{__html: item}} />);
+	list.forEach((item, i) => {
+		items.push(<li className="ul__li ul__li_light" dangerouslySetInnerHTML={{__html: item}} key={i}/>);
 	});
 
 	return (
