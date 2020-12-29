@@ -1,0 +1,13 @@
+.ul
+
+	&__li
+		list-style-type: none
+
+		&:before
+			content: '— '
+
+		&:not(:last-of-type)
+			margin-bottom: 8px
+
+		&_light
+			color: $secondary
