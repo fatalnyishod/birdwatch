@@ -12,7 +12,7 @@ const Footer = () => {
 					<Link href="/">
 						<a className="footer__nav-item">Журнал</a>
 					</Link>
-					<Link href="/footer">
+					<Link href="/about">
 						<a className="footer__nav-item">О нас</a>
 					</Link>
 					<Link href="/">

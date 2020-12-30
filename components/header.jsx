@@ -32,7 +32,9 @@ const Header = ({isBanner = false}) => {
 						</Link>
 				</div>
 
-				<div className="header__trigger" onClick={() => setState(!navState)}>{navState ? "☰" : "×"}</div>
+				<div className={navState ? "header__trigger" : "header__trigger active"} onClick={() => setState(!navState)}>
+					<div className="header__trigger-middle"></div>
+				</div>
 			</div>
 		</div>
 	);
