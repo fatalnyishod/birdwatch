@@ -20,13 +20,13 @@ export default function Home() {
 
 			<Banner />
 
-			<Filter />
+			{/* <Filter /> */}
 
 			<RoundUp />
 
-			<Foundation />
+			{/* <Foundation /> */}
 
-			<Team />
+			{/* <Team /> */}
 
 			<Subscription />
 		</>

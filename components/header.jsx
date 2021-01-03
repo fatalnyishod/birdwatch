@@ -18,18 +18,18 @@ const Header = ({isBanner = false}) => {
 				<div className={navState ? "header__nav" : "header__nav header__nav_shown"}>
 					{/* <input type="text" className="header__search" placeholder="Найти вид"/> */}
 
-					<Link href="/">
+					{/* <Link href="/">
 						<a className="header__nav-item">Журнал</a>
-						</Link>
+					</Link>
 					<Link href="/">
 						<a className="header__nav-item">О нас</a>
-						</Link>
+					</Link>
 					<Link href="/">
 						<a className="header__nav-item">Для чего все это?</a>
-						</Link>
+					</Link> */}
 					<Link href="/">
-						<a className="header__nav-item">Контакты</a>
-						</Link>
+						<a className="header__nav-item">Команда</a>
+					</Link>
 				</div>
 
 				<div className="header__trigger" onClick={() => setState(!navState)}>☰</div>
