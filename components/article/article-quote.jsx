@@ -1,7 +1,9 @@
-const ArticleQuote = ({text}) => {
+const ArticleQuote = ({children}) => {
 	return (
 		<div className="article__quote">
-			<p className="text text_quote">{text}</p>
+			<p className="text text_quote">
+				{children}
+			</p>
 		</div>
 	);
 };

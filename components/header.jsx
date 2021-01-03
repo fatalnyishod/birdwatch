@@ -20,8 +20,8 @@ const Header = ({isBanner = false}) => {
 
 					{/* <Link href="/">
 						<a className="header__nav-item">Журнал</a>
-					</Link>
-					<Link href="/">
+						</Link>
+					<Link href="/about">
 						<a className="header__nav-item">О нас</a>
 					</Link>
 					<Link href="/">
@@ -32,7 +32,9 @@ const Header = ({isBanner = false}) => {
 					</Link>
 				</div>
 
-				<div className="header__trigger" onClick={() => setState(!navState)}>☰</div>
+				<div className={navState ? "header__trigger" : "header__trigger active"} onClick={() => setState(!navState)}>
+					<div className="header__trigger-middle"></div>
+				</div>
 			</div>
 		</div>
 	);

@@ -34,8 +34,9 @@ const ArticleSwiper = ({imgs}) => {
 	return (
 		<div className="article__swiper">
 			<Swiper {...swiperSettings}>
-				<div className="article__swiper-nav article__swiper-nav_prev" id="prev"></div>
 				{slides}
+
+				<div className="article__swiper-nav article__swiper-nav_prev" id="prev"></div>
 				<div className="article__swiper-nav article__swiper-nav_next" id="next"></div>
 				<div className="article__swiper-pagination"></div>
 			</Swiper>
