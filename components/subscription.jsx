@@ -29,30 +29,35 @@ const Subscription = () => {
 	return (
 		<div className="subscription">
 			<div className="grid subscription__grid">
-				<h2 className="title title_h2">Хотите быть в курсе сообщества?</h2>
+				<h2 className="title title_h2">Подпишитесь на рассылку</h2>
+
+				<p className="text text_light">
+					Присылаем письма о новых статьях и проектах не чаще двух раз в месяц.
+					<br />
+					Без спама.
+				</p>
 
 				<form className="subscription__form" onSubmit={handleSubmit}>
-					<input type="email" className="subscription__input" placeholder="Оставьте ваш E-mail" onChange={handleEmailChange} minLength="6" required/>
+					<input type="email" className="subscription__input" placeholder='Электронная почта' onChange={handleEmailChange} minLength="6" required />
 					<button type="submit" className="btn subscription__btn">Подписаться</button>
 				</form>
 
-				<h3 className="title title_h3">Подпишись на нас</h3>
 				<div className="subscription__socials">
 					<a href="/" target="_blank" className="subscription__socials-item">
-						<img src="/images/icons/main/twitter.svg" className="subscription__socials-item"/>
+						<img src="/images/icons/main/twitter.svg" className="subscription__socials-item" />
 					</a>
 
 					<a href="/" target="_blank" className="subscription__socials-item">
-						<img src="/images/icons/main/ok.svg" className="subscription__socials-item"/>
+						<img src="/images/icons/main/ok.svg" className="subscription__socials-item" />
 					</a>
 
 					<a href="/" target="_blank" className="subscription__socials-item">
-						<img src="/images/icons/main/vk.svg" className="subscription__socials-item"/>
+						<img src="/images/icons/main/vk.svg" className="subscription__socials-item" />
 					</a>
 				</div>
 			</div>
 
-			<Footer/>
+			<Footer />
 		</div>
 	);
 };
