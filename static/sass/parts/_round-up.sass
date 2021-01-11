@@ -25,14 +25,18 @@
 				.round-up__img
 					height: 218px
 
+				.round-up__item-wrap > .title
+					width: 400px
+
 		&:last-of-type
 			@media (min-width: 930px)
 				grid-column-start: 3
 				grid-row-start: 1
 				grid-row-end: 3
 
+				.round-up__item-wrap,
 				.round-up__img
-					height: 100%
+					height: calc(100% - 16px)
 
 		@media (hover)
 			&:hover
@@ -42,12 +46,22 @@
 		.round-up__img
 			margin-bottom: 16px
 			transition: opacity .2s ease-in-out
-		
+
 		span
 			margin-bottom: 8px
 
+	&__item-wrap
+		position: relative
+
+		.title
+			position: absolute
+			z-index: 1
+			left: 24px
+			bottom: 32px
+			width: 220px
+
 	&__img
 		width: 100%
-		height: 140px
+		height: 180px
 		border-radius: 10px
 		object-fit: cover
