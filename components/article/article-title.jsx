@@ -1,7 +1,5 @@
 const ArticleTitle = ({children}) => {
-	return (
-		<h2 className="title title_h2">{children}</h2>
-	);
+  return <h3 className='title title_h3'>{children}</h3>;
 };
 
 export default ArticleTitle;
