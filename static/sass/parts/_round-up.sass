@@ -4,7 +4,7 @@
 	&__grid
 		display: grid
 		grid-template-columns: repeat(3, 1fr)
-		grid-gap: 32px 30px
+		grid-gap: 30px
 		margin-bottom: 32px
 
 		@media #{$tablet}
@@ -25,40 +25,35 @@
 				.round-up__img
 					height: 218px
 
-				.round-up__item-wrap > .title
-					width: 400px
-
 		&:last-of-type
 			@media (min-width: 930px)
 				grid-column-start: 3
 				grid-row-start: 1
 				grid-row-end: 3
 
-				.round-up__item-wrap,
-				.round-up__img
-					height: calc(100% - 16px)
+				.round-up__item-wrap, .round-up__img
+					height: 100%
 
 		@media (hover)
 			&:hover
 				.round-up__img
 					opacity: .8
 
-		.round-up__img
+		&-wrap
+			position: relative
 			margin-bottom: 16px
+
+		.round-up__img
 			transition: opacity .2s ease-in-out
-
-		span
-			margin-bottom: 8px
-
-	&__item-wrap
-		position: relative
 
 		.title
 			position: absolute
-			z-index: 1
+			max-width: 60%
+			bottom: 16px
 			left: 24px
-			bottom: 32px
-			width: 220px
+
+		.text_light
+			margin-bottom: 8px
 
 	&__img
 		width: 100%
