@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect} from "react";
 import Link from "next/link";
 
 const Header = ({isBanner = false}) => {

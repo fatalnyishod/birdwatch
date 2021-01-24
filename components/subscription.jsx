@@ -2,7 +2,7 @@ import {useState} from "react";
 import Footer from "./footer";
 
 const Subscription = () => {
-	const [emailState, updateEmailState] = useState('');
+	const [emailState, updateEmailState] = useState("");
 
 	const handleEmailChange = (event) => {
 		updateEmailState(event.target.value);
@@ -15,7 +15,7 @@ const Subscription = () => {
 			name: emailState
 		});
 
-		const json = await fetch('http://localhost:3100/emails', {
+		const json = await fetch("http://localhost:3100/emails", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json"
@@ -38,7 +38,7 @@ const Subscription = () => {
 				</p>
 
 				<form className="subscription__form" onSubmit={handleSubmit}>
-					<input type="email" className="subscription__input" placeholder='Электронная почта' onChange={handleEmailChange} minLength="6" required />
+					<input type="email" className="subscription__input" placeholder="Электронная почта" onChange={handleEmailChange} minLength="6" required />
 					<button type="submit" className="btn subscription__btn">Подписаться</button>
 				</form>
 
