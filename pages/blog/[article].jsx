@@ -37,9 +37,9 @@ const Article = (props) => {
 
 							<ArticleSwiper 
 								imgs = {[
-									'/images/backgrounds/green-bird.png',
-									'/images/backgrounds/green-bird.png',
-									'/images/backgrounds/green-bird.png'
+									"/images/backgrounds/green-bird.png",
+									"/images/backgrounds/green-bird.png",
+									"/images/backgrounds/green-bird.png"
 								]}
 							/>
 						</div>

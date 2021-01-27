@@ -1,35 +1,35 @@
-import Head from 'next/head';
-import Layout from '../../components/layout';
-import authors from '../../components/authors';
-import ArticleLayout from '../../components/article/article-layout';
-import ArticleHeader from '../../components/article/article-header';
-import ArticleParagraph from '../../components/article/article-paragraph';
-import ArticleTitle from '../../components/article/article-title';
-import ArticleSwiper from '../../components/article/article-swiper';
-import ArticleQuote from '../../components/article/article-quote';
-import ArticleImg from '../../components/article/article-img';
+import Head from "next/head";
+import Layout from "../../components/layout";
+import authors from "../../components/authors";
+import ArticleLayout from "../../components/article/article-layout";
+import ArticleHeader from "../../components/article/article-header";
+import ArticleParagraph from "../../components/article/article-paragraph";
+import ArticleTitle from "../../components/article/article-title";
+import ArticleSwiper from "../../components/article/article-swiper";
+import ArticleQuote from "../../components/article/article-quote";
+import ArticleImg from "../../components/article/article-img";
 
 const Article = () => {
   return (
     <>
       <Head>
         <title>Группы бердвотчеров, орнитологические прогулки и туры</title>
-        <meta name='description' content='Группы бердвотчеров, орнитологические прогулки и туры' />
-        <meta property='og:title' content='Бёрдвотчинг — что это и ĸаĸ начать?' />
+        <meta name="description" content="Группы бердвотчеров, орнитологические прогулки и туры" />
+        <meta property="og:title" content="Бёрдвотчинг — что это и ĸаĸ начать?" />
         <meta
-          property='og:description'
-          content='Группы бердвотчеров, орнитологические прогулки и туры'
+          property="og:description"
+          content="Группы бердвотчеров, орнитологические прогулки и туры"
         />
-        <meta property='og:image' content='http://birdwatch.ru/images/' />
+        <meta property="og:image" content="http://birdwatch.ru/images/" />
         <meta
-          property='og:url'
-          content='http://birdwatch.ru/blog/birdwatching-what-it-is-and-how-to-start'
+          property="og:url"
+          content="http://birdwatch.ru/blog/birdwatching-what-it-is-and-how-to-start"
         />
-        <meta property='og:type' content='article' />
+        <meta property="og:type" content="article" />
       </Head>
 
       <Layout>
-        <ArticleHeader text='Больше глаз — больше птиц' />
+        <ArticleHeader text="Больше глаз — больше птиц" />
         <ArticleLayout author={authors.marat}>
           <ArticleParagraph>
             Удобство бёрдвотчинга в независимости от факторов — птицы есть всегда, везде и постоянно
@@ -71,10 +71,10 @@ const Article = () => {
           </ArticleParagraph>
 
           <ArticleParagraph>
-            <a href='#' className='link link_spoiler'>
+            <a href="#" className="link link_spoiler">
               Посмотрите список и найдите тех, кто к вам ближе
             </a>
-            {'  '}↓
+            {"  "}↓
           </ArticleParagraph>
 
           <ArticleParagraph>Желаю удачи!</ArticleParagraph>
