@@ -1,9 +1,24 @@
 const authors = {
-	marat: {
-		name: "Марат Магомедов",
-		desc: "Бёрдер, 85 видов. Horny Orni Teammate. Канал — <a href=\"/\" class=\"link\">@birder_diary</a>",
-		photo: "https://sun9-50.userapi.com/impf/c857416/v857416582/21e9bb/k-TZNgRp2Ak.jpg?size=640x640&quality=96&proxy=1&sign=a1b2aa8815e35a19748b017a12ef0911&type=album"
-	}
+  marat: {
+    name: 'Марат Магомедов',
+    desc: 'Член команды Horny Orni Team. Бёрдвотчер и программист.',
+    photo: '/images/authors/marat.jpg'
+  },
+  nastya: {
+    name: 'Анастасия Бесфамильная',
+    desc: 'Член команды Horny Orni Team, бёрдер.',
+    photo: '/images/authors/nastya.jpg'
+  },
+  katya: {
+    name: 'Екатерина Сичинава',
+    desc: 'Член команды Horny Orni Team. Студент-палеонтолог и бёрдер.',
+    photo: '/images/authors/katya.jpg'
+  },
+  stepan: {
+    name: 'Степан Сурков',
+    desc: 'Редактор, бёрдер.',
+    photo: '/images/authors/stepan.jpg'
+  }
 };
 
 export default authors;

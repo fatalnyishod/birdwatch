@@ -5,6 +5,7 @@ import ArticleLayout from '../../components/article/article-layout';
 import ArticleHeader from '../../components/article/article-header';
 import ArticleParagraph from '../../components/article/article-paragraph';
 import ArticleTitle from '../../components/article/article-title';
+import ArticleTitleHead from '../../components/article/article-title-head.jsx';
 import ArticleSwiper from '../../components/article/article-swiper';
 import ArticleQuote from '../../components/article/article-quote';
 import ArticleImg from '../../components/article/article-img';
@@ -31,8 +32,9 @@ const Article = () => {
         <meta property='og:type' content='article' />
       </Head>
 
-      <ArticleHeader text='Бёрдвотчинг: что это и ĸаĸ начать' />
+      <ArticleHeader coverClassName='article__header_birdwatching-what-it-is' />
       <ArticleLayout author={authors.marat}>
+        <ArticleTitleHead>Бёрдвотчинг: что это и ĸаĸ начать</ArticleTitleHead>
         <ArticleParagraph>
           Сначала определимся с термином. Бёрдвотчинг — это наблюдение и учет птиц. Если вы зимой
           подĸармливаете птиц на оĸонной ĸормушĸе, а потом считаете ĸаĸие прилетели — вы уже

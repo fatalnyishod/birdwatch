@@ -1,16 +1,16 @@
-import Header from "./header";
-import Subscription from "./subscription";
+import Header from './header';
+import Subscription from './subscription';
 
 function Layout({children}) {
-	return (
-		<>
-			<Header />
+  return (
+    <>
+      <Header />
 
-			{children}
+      {children}
 
-			<Subscription />
-		</>
-	);
+      <Subscription />
+    </>
+  );
 }
 
-export default Layout
+export default Layout;

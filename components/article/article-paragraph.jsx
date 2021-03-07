@@ -1,7 +1,5 @@
-import ArticleHeader from "./article-header";
-
-const ArticleParagraph = ({children}) => {
-  return <p className="text">{children}</p>;
+const ArticleParagraph = ({children, bold = false}) => {
+  return <p className={bold ? 'text text_b' : 'text'}>{children}</p>;
 };
 
 export default ArticleParagraph;
