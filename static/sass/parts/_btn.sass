@@ -1,20 +1,21 @@
 .btn
-	display: inline-block
-	flex-shrink: 0
+	display: flex
+	align-items: center
+	width: max-content
 	max-width: 100%
-	height: 56px
-	padding: 18px 56px 18px 24px
+	height: 40px
+	padding: 0 48px 0 16px
 	background: url('#{$images}/icons/white/small-arrow.svg')
 	background-repeat: no-repeat !important
-	background-position: calc(100% - 34px) calc(0% + 24px) !important
+	background-position: calc(100% - 24px) calc(0% + 16px) !important
 	background-color: $main
 	border: none
-	border-radius: 12px
+	border-radius: $radius-s
 	color: #fff
 	font-size: 1rem
 	font-weight: 500
 	line-height: 22px
-	transition: background-position-x .2s ease-in-out
+	transition: background-position-x .3s ease-in-out
 	overflow: hidden
 	white-space: nowrap
 	text-overflow: ellipsis
@@ -23,7 +24,7 @@
 
 	@media (hover)
 		&:hover
-			background-position-x: calc(100% - 24px) !important
+			background-position-x: calc(100% - 16px) !important
 
 	&_white
 		background: url('#{$images}/icons/main/small-arrow.svg')

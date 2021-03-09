@@ -7,6 +7,7 @@ import ArticleParagraph from '../../components/article/article-paragraph';
 import ArticleTitle from '../../components/article/article-title';
 import ArticleTitleHead from '../../components/article/article-title-head.jsx';
 import ArticleUl from '../../components/article/article-ul.jsx';
+import ArticleSwiper from '../../components/article/article-swiper';
 
 const Article = () => {
   return (
@@ -29,7 +30,7 @@ const Article = () => {
         <meta property='og:type' content='article' />
       </Head>
 
-      <ArticleHeader coverClassName='article__header_binokulars' />
+      <ArticleHeader coverClassName='article__header_biotopes' />
       <ArticleLayout author={authors.katya}>
         <ArticleTitleHead>Биотопы: где обитают птицы</ArticleTitleHead>
         <ArticleParagraph>
@@ -52,6 +53,17 @@ const Article = () => {
           В списке собраны виды только Северо-Запада России: Ленинградской, Псковской и Новгородской
           областей. Многие птицы из этого региона обитают на большей части нашей страны.
         </ArticleParagraph>
+
+        <ArticleParagraph>
+          <b>Нажмите Cntrl + F для поиска вида</b>
+        </ArticleParagraph>
+
+        {/* водоемы */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={['/images/biotopes/1-1-biotopes.jpg', '/images/biotopes/1-2-biotopes.jpg']}
+          isSign={['Фото — Carles Pastor', 'Фото — Alexandros Quartarone']}
+        />
 
         <ArticleTitle>Стоячие водоёмы: озёра, поймы рек, лиманы</ArticleTitle>
         <ArticleUl>
@@ -152,6 +164,12 @@ const Article = () => {
           </li>
         </ArticleUl>
 
+        {/* реки */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={['/images/biotopes/2-1-biotopes.jpg', '/images/biotopes/2-2-biotopes.jpg']}
+          isSign={['Фото — Елена Вотинцева', 'Фото — Игорь Двуреков']}
+        />
         <ArticleTitle>Реки</ArticleTitle>
         <ArticleUl>
           <li>
@@ -236,6 +254,16 @@ const Article = () => {
           </li>
         </ArticleUl>
 
+        {/* морское побережье */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={[
+            '/images/biotopes/3-1-biotopes.jpg',
+            '/images/biotopes/3-2-biotopes.jpg',
+            '/images/biotopes/3-3-biotopes.jpg'
+          ]}
+          isSign={['Фото — Linda Gilbert', 'Фото — RJ Baltierra', 'Фото — Christoph Moning']}
+        />
         <ArticleTitle>Морское побережье</ArticleTitle>
         <ArticleUl>
           <li>
@@ -306,6 +334,12 @@ const Article = () => {
           </li>
         </ArticleUl>
 
+        {/* лес */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={['/images/biotopes/4-1-biotopes.jpg', '/images/biotopes/4-2-biotopes.jpg']}
+          isSign={['Фото — Ronda Groom', 'Фото — Светлана Стрижова']}
+        />
         <ArticleTitle>Лес: хвойные, смешанные и широколиственные, опушки и редколесье</ArticleTitle>
         <ArticleUl>
           <li>
@@ -394,6 +428,20 @@ const Article = () => {
           </li>
         </ArticleUl>
 
+        {/* город */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={[
+            '/images/biotopes/5-1-biotopes.jpg',
+            '/images/biotopes/5-2-biotopes.jpg',
+            '/images/biotopes/5-3-biotopes.jpg'
+          ]}
+          isSign={[
+            'Фото — Анастасия Бесфамильная',
+            'Фото — Анастасия Бесфамильная',
+            'Фото — Екатерина Сичинава'
+          ]}
+        />
         <ArticleTitle>Город</ArticleTitle>
         <ArticleUl>
           <li>
@@ -471,6 +519,220 @@ const Article = () => {
                 овсянки, зяблик, чиж, щегол, зеленушка, снегирь, домовый и полевой воробьи, скворец,
                 сойка, сорока, серая ворона, грач, галка, белая трясогузка, свиристель, зарянка,
                 рябинник, черный дрозд, садовая камышовка, садовая славка
+              </span>
+            </div>
+          </li>
+        </ArticleUl>
+
+        {/* болота */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={['/images/biotopes/6-1-biotopes.jpg', '/images/biotopes/6-2-biotopes.jpg']}
+          isSign={['Фото — Di Franklin', 'Фото — Дмитрий Дубиковский']}
+        />
+        <ArticleTitle>Болота</ArticleTitle>
+        <ArticleUl>
+          <li>
+            <div>
+              <b>Курообразные</b>
+              <span>Белая куропатка, тетерев</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Пеликанообразные</b>
+              <span>
+                Серая, рыжая, малая белая и большая белая цапли, большая и малая выпи, каравайка
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Аистообразные</b>
+              <span>Белый аист</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Поганкообразные</b>
+              <span>Серощекая поганка</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Журавлеобразные</b>
+              <span>
+                Серый журавль, водяной пастушок, обыкновенный и малый погоныши, камышница, лысуха,
+                коростель
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Ржанкообразные</b>
+              <span>
+                Золотистая ржанка, чибис, черныш, фифи, большой улит, травник, поручейник, турухтан,
+                гарншнеп, дупель, бекас, вальдшнеп, большой и средний кроншнепы, большой и малый
+                веретенник, сизая чайка, черная и речная крачки
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Совообразные</b>
+              <span>Болотная и ястребиная совы</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Козодоеобразные</b>
+              <span>Обыкновенный козодой</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Гусеобразные</b>
+              <span>
+                Канадская казарка, лебедь-кликун, гуменник, пискулька, шилохвость, широконоска,
+                красноголовый нырок, морская чернеть, морянка
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Соколообразные</b>
+              <span>
+                Черный коршун, полевой и болотный луни, зимняк, змееяд, большой подорлик, беркут,
+                орлан-белохвост, чеглок, дербник
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Воробьинообразные</b>
+              <span>
+                Черноголовая гаичка, камышовая и белошапочная овсянки, овсянка-ремез,
+                овсянка-крошка, дубровник, ворон, полевой жаворонок, лесной и луговой коньки,
+                сорокопут-жулан, серый сорокопут, свиристель, луговой и черноголовый чеканы,
+                тростниковая, болотная и дроздовидная камышовки, камышовка-барсучок, речной,
+                соловьиный и обыкновенный сверчки
+              </span>
+            </div>
+          </li>
+        </ArticleUl>
+
+        {/* открытые ландшафты */}
+        <ArticleSwiper
+          mods='article__swiper_cover article__swiper_sign'
+          imgs={[
+            '/images/biotopes/7-1-biotopes.jpg',
+            '/images/biotopes/7-2-biotopes.jpg',
+            '/images/biotopes/7-3-biotopes.jpg'
+          ]}
+          isSign={['Фото — Vinayak Hebbagil', 'Фото — Анастасия Бесфамильная', 'Фото — Илья Сухов']}
+        />
+        <ArticleTitle>Открытые ландшафты: луга, поля, пустыри</ArticleTitle>
+        <ArticleUl>
+          <li>
+            <div>
+              <b>Курообразные</b>
+              <span>Серая и белая куропатки, перепел</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Пеликанообразные</b>
+              <span>Серая, малая белая и большая белая цапли, каравайка</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Аистообразные</b>
+              <span>Белый и черный аисты</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Журавлеобразные</b>
+              <span>Серый журавль, водяной пастушок, обыкновенный и малый погоныши, коростель</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Ржанкообразные</b>
+              <span>
+                Золотистая ржанка, чибис, фифи, травник, поручейник, турухтан, средний и большой
+                кроншнепы, большой веретенник, бекас, дупель
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Совообразные</b>
+              <span>Полярная и болотная совы, домовый сыч</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Ракшеобразные</b>
+              <span>Удод, золотистая щурка</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Козодоеобразные</b>
+              <span>Обыкновенный козодой</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Гусеобразные</b>
+              <span>
+                Краснозобая, черная и белощекая казарки, белолобый и серый гуси, гуменник,
+                пискулька, пеганка, огарь, шилохвость
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Соколообразные</b>
+              <span>Осоед, полевой и луговой луни, зимняк, обыкновенная пустельга, дербник</span>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <b>Воробьинообразные</b>
+              <span>
+                Серая мухоловка, большая синица, камышовая, белошапочная, обыкновенная и садовая
+                овсянки, дубровник, подорожник, пуночка, обыкновенная и тундряная чечетка,
+                коноплянка, чиж, щегол, зеленушка, дубонос, канареечный вьюрок, домовый воробей,
+                полевой воробей, скворец, сорока, ворон, серая ворона, грач, галка, полевой и
+                рогатый жавороноки, ласточка береговушка, деревенская и городская ласточки, белая,
+                желтая и желтоголовая трясогузки, луговой, краснозобы, полевой и степной коньки,
+                серый и чернолобый сорокопутб сорокопут-жулан, крапивник, луговой и черноголовый
+                чекан, каменка, горихвостка-чернушка, варакушка, северная бормотушка, болотная и
+                садовая камышовки, обыкновенный и соловьиный сверчки, ястребиная, садовая и серая
+                славки, славка-черноголовка, славка-завирушка
               </span>
             </div>
           </li>

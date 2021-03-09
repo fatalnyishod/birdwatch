@@ -36,13 +36,13 @@ const RoundUp = () => {
         <Link href='/blog/where-is-your-lifelist'>
           <a className='round-up__item'>
             <div className='round-up__item-wrap'>
-              <img src='/images/backgrounds/where-is-your-lifelist.jpg' className='round-up__img' />
+              <img src='/images/backgrounds/where-is-your-lifelist.png' className='round-up__img' />
               <h3 className='title title_h3 title_white'>Чеклисты для бёрдвотчеров</h3>
             </div>
             <span className='text text_light'>Анастасия Бесфамильная, 9 марта</span>
             <p className='text'>
               Зачем записывать увиденных птиц и как это делать: блокноты, Ебёрд, Рубёрд и
-              Айнатуралист
+              Айнатуралист.
             </p>
           </a>
         </Link>
@@ -50,7 +50,7 @@ const RoundUp = () => {
         <Link href='/blog/biotopes'>
           <a className='round-up__item'>
             <div className='round-up__item-wrap'>
-              <img src='images/backgrounds/more-eyes-more-birds.png' className='round-up__img' />
+              <img src='images/backgrounds/biotopes.jpg' className='round-up__img' />
               <h3 className='title title_h3 title_white'>Биотопы: где какие птицы обитают</h3>
             </div>
             <span className='text text_light'>Екатерина Сичинава, 9 марта</span>

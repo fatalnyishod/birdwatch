@@ -5,8 +5,10 @@
 		height: 480px
 		margin-bottom: 32px
 		padding-bottom: 100px
-		background: url('#{$images}/backgrounds/green-bird.png') no-repeat center / cover
+		background: url('#{$images}/backgrounds/birdwatching-what-it-is-and-how-to-start.jpg') no-repeat center / cover
 		text-align: center
+		&_birdwatching-what-it-is
+			background: url('#{$images}/backgrounds/birdwatching-what-it-is-and-how-to-start.jpg') no-repeat center / cover
 		&_more-eyes-more-birds
 			background: url('#{$images}/backgrounds/more-eyes-more-birds.png') no-repeat center / cover
 		&_find-your-guide
@@ -14,7 +16,9 @@
 		&_binokulars
 			background: url('#{$images}/backgrounds/binokulars.jpg') no-repeat center / cover
 		&_where-is-your-lifelist
-			background: url('#{$images}/backgrounds/where-is-your-lifelist.jpg') no-repeat center / cover
+			background: url('#{$images}/backgrounds/where-is-your-lifelist.png') no-repeat center / cover
+		&_biotopes
+			background: url('#{$images}/backgrounds/biotopes-in.png') no-repeat center / cover
 		@media #{$phone}
 			height: 320px
 
@@ -102,6 +106,12 @@
 		position: relative
 		&:hover > .swiper-container	> .article__swiper-nav
 			opacity: 1
+		&_cover
+			.article__swiper-img
+				object-fit: cover
+		&_sign
+			.article__swiper-pagination
+				bottom: 48px !important
 
 		&-img
 			width: 100%
